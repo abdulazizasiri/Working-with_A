@@ -26,7 +26,26 @@ function loadData() {
 
         $("#nytimes-articles").after("<li class=articel> <a href="+i.web_url+">"+i.headline.main+"</a></li>")
       })
+
+    }).error(function() {
+      $("#nytimes-header").text("New York Times Articles could not be Loaded");
     })
+
+
+    $.ajax({
+      type: "GET",
+      url: "http://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page=Jimi_Hendrix&callback=?",
+      contentType: "application/json; charset=utf-8",
+      async: false,
+      dataType: "jsonp",
+      success: function (data, textStatus, jqXHR) {
+        $("#nytimes-articles").after("<li class=articel> <a href="+i.web_url+">"+i.headline.main+"</a></li>")
+
+      },
+      error: function (errorMessage) {
+      }
+  });
+
 
     return false;
 };
