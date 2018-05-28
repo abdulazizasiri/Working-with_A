@@ -8,9 +8,9 @@ function loadData() {
     var $greeting = $('#greeting');
     var $city = $("#city").val();
     var $street = $("#street").val();
-    var $conCat = "http://maps.googleapis.com/maps/api/streetview?size=600x300&location="+$city+$street ;
+    var $conCat = "http://maps.googleapis.com/maps/api/streetview?size=600x300&location="+$street+", "+$city ;
 
-    // clear out old data before new request
+    $("#greeting").text("So, you want to live at: "+$street+","+$city )
     $body.append('<img class="bgimg" src='+$conCat+">");
     // $wikiElem.text("");
     // $nytElem.text("");
