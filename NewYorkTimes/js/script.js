@@ -15,8 +15,18 @@ function loadData() {
     // $wikiElem.text("");
     // $nytElem.text("");
     // load streetview
+    var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
+  url += '?' + $.param({
+    'q':$street+","+$city,
+    'api-key': "70bc4527b0df4f8b96747be82eb44518"
+    });
+    $.getJSON(url, function(data) {
 
-    // YOUR CODE GOES HERE!
+      data.response.docs.forEach((i)=>{
+
+        $("#nytimes-articles").after("<li class=articel> <a href="+i.web_url+">"+i.headline.main+"</a></li>")
+      })
+    })
 
     return false;
 };
