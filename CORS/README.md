@@ -4,5 +4,5 @@ CROS: Cross-Origin Resource Sharing .
 
 
 
-. reference
-[Link](#Udacity-udacity.com/courses/ud110/lessons/3310298553/concepts/31914985390923)
+- reference
+[Udacity](#udacity.com/courses/ud110/lessons/3310298553/concepts/31914985390923)
