@@ -5,4 +5,4 @@ CROS: Cross-Origin Resource Sharing .
 
 
 - reference
-[Udacity](https://www.udacity.com/course/intro-to-ajax--ud110)
+[Udacity: Ajax Course](https://www.udacity.com/course/intro-to-ajax--ud110)
