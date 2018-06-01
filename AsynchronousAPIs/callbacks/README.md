@@ -9,3 +9,22 @@ An example of a callback is a jQuery method called:
 $.get 
 
 ```
+
+this methods must be executed asynchronously since the operation it does might be a bit time consuming.
+
+Syntax:
+
+
+```javascript
+
+  window.onload = function() {
+
+    $.getJSON("data/tweets.json",function(data){
+      console.log(datalist);
+    });
+    console.log("TEST")
+
+ }
+
+
+```
