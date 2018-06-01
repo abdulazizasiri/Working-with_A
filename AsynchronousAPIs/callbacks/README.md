@@ -19,7 +19,7 @@ Syntax:
 
   window.onload = function() {
 
-    $.getJSON("data/tweets.json",function(data){
+    $.get("data/tweets.json",function(data){
       console.log(datalist);
     });
     console.log("TEST")
