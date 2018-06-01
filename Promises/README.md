@@ -12,9 +12,18 @@ Note: the callback takes two important args:
 
 2- reject
 
-reject is used to handle the code that fulfills its promise.
+resolve is used to handle the code that fulfills its promise.
 
 reject handles the code that did not fulfill the promise.
+
+## After the code resolves
+
+After the code resolves, it is time for the thening part. You have to call .then(whatever resolves takes). 
+
+This method used to 
+
+
+
 
 
 
