@@ -21,4 +21,4 @@
 
 ## 1- Maps javascript API
 
-First of all, you need to get the API key. It something that tells google that a developer wants to use this service. To get the API Key follow the instruction on this link [Link to the tutorial to get the API key]: https://developers.google.com/maps/documentation/javascript/get-api-key 
+First of all, you need to get the API key. It something that tells google that a developer wants to use this service. To get the API Key follow the instruction on this link  https://developers.google.com/maps/documentation/javascript/get-api-key 
