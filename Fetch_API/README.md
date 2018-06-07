@@ -32,7 +32,7 @@ A USVString containing the direct URL of the resource you want to fetch. Some br
 A Request object.
 
 
-init has many parameters. 
+init has many parameters.
 
 ## Chaining HTTP method.
 
@@ -41,4 +41,21 @@ init has many parameters.
 fetch(`https://api.unsplash.com/search/photos?page=1&query=${searchedForText}`, {
     method: 'POST'
 });
+```
+
+
+## handling the response.
+
+After creating the promise, you can use the "then" method to handle all the result.
+
+
+```javascript
+fetch(`https://api.unsplash.com/search/photos?page=1&query=${searchedForText}`, {
+    headers: {
+        Authorization: 'Client-ID abc123'
+    }
+}).then(function(response) {
+    debugger; // work with the returned response
+});
+
 ```
