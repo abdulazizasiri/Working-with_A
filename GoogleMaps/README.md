@@ -71,3 +71,8 @@ function initMap() {
 
 
 ```
+
+
+### Giving a user more information about some markers on maps.
+
+this feature is helpful for users who want to get some information about some points/marks on the maps with clicking or zooming in to find out what this marks is or points at. 
