@@ -28,11 +28,17 @@ Second, Create in you javascript file an object the create a google maps.
 
 ```javascript
 var map;
+var location = {lat: 33.955654, lng:-118.416721};
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'),{
-    center: {lat: 33.955654, lng:-118.416721},
+    center: location,
     zoom: 10
 
+  });
+  var marker;
+  marker = new google.maps.Marker({
+    pos:location,
+    map: map
   });
 }
 

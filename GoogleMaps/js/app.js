@@ -6,4 +6,11 @@
       zoom: 10
 
     });
+
+    var location = {lat: 33.955654, lng:-118.416721};
+    var marker = new google.maps.Marker({
+      position: location,
+      map:map,
+      title: 'My location'
+    });
   }
