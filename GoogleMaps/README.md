@@ -39,3 +39,9 @@ function initMap() {
 ```
 
 Make sure you have a tag with an id of 'map' so that the map loads to that tag.
+
+
+Notice that the map is genera;, there is no marker or points to show something. Let's create a marker on the map.
+
+
+### Adding a marker on the map.
