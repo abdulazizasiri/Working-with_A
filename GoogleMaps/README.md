@@ -21,4 +21,21 @@
 
 ## 1- Maps javascript API
 
-First of all, you need to get the API key. It something that tells google that a developer wants to use this service. To get the API Key follow the instruction on this link  https://developers.google.com/maps/documentation/javascript/get-api-key 
+First of all, you need to get the API key. It something that tells google that a developer wants to use this service. To get the API Key follow the instruction on this link  https://developers.google.com/maps/documentation/javascript/get-api-key
+
+Second, Create in you javascript file an object the create a google maps.
+
+
+```javascript
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'),{
+    center: {lat: 33.955654, lng:-118.416721},
+    zoom: 10
+
+  });
+}
+
+```
+
+Make sure you have a tag with an id of 'map' so that the map loads to that tag.
