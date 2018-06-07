@@ -5,7 +5,7 @@
       {
         featureType: 'water',
         stylers: [
-          { color: '#19a0d8' }
+          { color: '#0000d8' }
         ]
       },{
         featureType: 'administrative',
@@ -55,22 +55,24 @@
         featureType: 'poi',
         elementType: 'geometry',
         stylers: [
-          { visibility: 'on' },
+          { visibility: 'off' },
           { color: '#f0e4d3' }
         ]
       },{
         featureType: 'road.highway',
         elementType: 'geometry.fill',
         stylers: [
-          { color: '#efe9e4' },
+          { color: '#efe94' },
           { lightness: -25 }
         ]
       }
     ];
-    
+
     map = new google.maps.Map(document.getElementById('map'),{
       center: {lat: 33.955654, lng:-118.416721},
-      zoom: 10
+      zoom: 10,
+      styles: styles,
+      mapTypeControl: true
 
     });
 
