@@ -28,19 +28,14 @@ Second, Create in you javascript file an object the create a google maps.
 
 ```javascript
 var map;
-var location = {lat: 33.955654, lng:-118.416721};
 function initMap() {
   map = new google.maps.Map(document.getElementById('map'),{
-    center: location,
+    center: {lat: 33.955654, lng:-118.416721},
     zoom: 10
 
   });
-  var marker;
-  marker = new google.maps.Marker({
-    pos:location,
-    map: map
-  });
-}
+
+
 
 ```
 
@@ -51,3 +46,28 @@ Notice that the map is genera;, there is no marker or points to show something. 
 
 
 ### Adding a marker on the map.
+
+
+We need to create another marker object on our javascript that access the map we just cretaed, and adds the marker.
+
+
+
+```javascript
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'),{
+    center: {lat: 33.955654, lng:-118.416721},
+    zoom: 10
+
+  });
+
+    var location = {lat: 33.955654, lng:-118.416721};
+    var marker = new google.maps.Marker({
+      position: location,
+      map:map,
+      title: 'My location'
+    });
+  }
+
+
+```
