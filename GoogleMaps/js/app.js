@@ -13,4 +13,14 @@
       map:map,
       title: 'My location'
     });
+
+    var info = new google.maps.InfoWindow({
+      content:"Hello this is where I live"
+    });
+
+    // this is an event listerm
+
+    marker.addListener("click", function(){
+      info.open(map, marker);
+    })
   }

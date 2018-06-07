@@ -75,4 +75,27 @@ function initMap() {
 
 ### Giving a user more information about some markers on maps.
 
-this feature is helpful for users who want to get some information about some points/marks on the maps with clicking or zooming in to find out what this marks is or points at. 
+this feature is helpful for users who want to get some information about some points/marks on the maps with clicking or zooming in to find out what this marks is or points at.
+
+
+To create an info window in google maps, it requires following two steps.
+
+
+1- you need to create "InfoWindow" object.
+
+```javascript
+
+var info = new google.maps.InfoWindow({
+  content:"Hello this is where I live"
+});
+
+```
+
+2- Bind this object to an event lister so that it listens when clicking on the marker.
+
+```javascript
+// marker refers to the previously created marker.
+marker.addListener("click", function(){
+  info.open(map, marker);  
+
+```
