@@ -8,9 +8,9 @@
 
 3- <code> Street View API </code>
 
-4- <code> Roads API </code>
+4- <code> Geocoding API </code>
 
-5- <code> Geocoding API </code>
+5- <code> Roads API </code>
 
 6- <code> Elevation API </code>
 
