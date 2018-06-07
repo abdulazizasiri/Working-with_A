@@ -99,3 +99,6 @@ marker.addListener("click", function(){
   info.open(map, marker);  
 
 ```
+
+
+### Applying styling.
