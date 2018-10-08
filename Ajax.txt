@@ -1,0 +1,44 @@
+Ajax
+-----------------------------------------------------------------------------
+
+We are done AJAX requests: 
+
+What we learned: 
+
+AJAX: Asyncronous javascript and XML. 
+
+
+XML usually replaced by Json
+
+You can use .ajax() or .getJSON methods In jQuery. 
+
+,Ajax is more general than getJSON. 
+
+The basic idea for calling API, and get some data: 
+
+
+1- get a public key if necessary 
+
+2- add all the parameter needed to be displayed. 
+
+3- Usually the result is found in an array.
+
+4- loop through this array, and get some data display in a an html tags. 
+
+-----------------------------------------------------------------------------
+Things that  do not understand: 
+
+
+1- CORS
+
+-----------------------------------------------------------------------------
+
+
+
+What I have deon: 
+
+1- streetViews google.
+
+2- NewYorkTimes
+
+
