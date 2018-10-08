@@ -1,3 +1,5 @@
 $( document ).ready(function() {
-    console.log( "ready!" );
+  var http = new XMLHttpRequest();
+  http.open("GET", 'tweets.json', false); // true means async call.
+
 });
